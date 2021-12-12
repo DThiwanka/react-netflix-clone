@@ -10,8 +10,8 @@ import React from "./listitem.scss";
 export default function ListItem({index}) {
 
     const [isHoverd,setIsHovered] = useState(false);
-    const trailer = ""
-
+    const trailer =
+    "https://vod-progressive.akamaized.net/exp=1639312748~acl=%2A%2F1135624384.mp4%2A~hmac=7aa19b96a7b1e4e9dda2d240a9db2063dc32bc1f5e2d8f98010845d142c0c505/vimeo-prod-skyfire-std-us/01/4577/11/297888097/1135624384.mp4";
   return (
     <div className="listItem"
     style={{left: isHoverd && index * 225 - 50 + index * 2.5}}
@@ -23,13 +23,13 @@ export default function ListItem({index}) {
       />
       {isHoverd &&(
           <>
-    <video src={trailer} autoplay={true} loop/>
+    <video src={trailer} autoPlay={true} loop/>
       <div className="itemInfo">
         <div className="icons">
-          <PlayArrow />
-          <Add />
-          <ThumbUpOutlined />
-          <ThumbDownOutlined />
+          <PlayArrow className="icon" />
+          <Add className="icon"/>
+          <ThumbUpOutlined className="icon"/>
+          <ThumbDownOutlined className="icon"/>
         </div>
         <div className="itemInfoTop">
           <span>1 hour 14 mins</span>
