@@ -5,7 +5,7 @@ import Login from "./pages/login/Login";
 import "./app.scss"
 
 const App = () => {
-  return <Login/>;
+  return <Watch/>;
 };
 
 export default App;
